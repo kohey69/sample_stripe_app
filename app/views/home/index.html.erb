@@ -1,1 +1,62 @@
-<h1>Home</h1>
+<h1>Kumaに毎月お小遣いをあげられるサブスク</h1>
+
+<div>
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">簡単な登録</h5>
+              <p class="card-text">数クリックで登録完了。すぐにお小遣いが受け取れます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">自動引き落とし</h5>
+              <p class="card-text">Stripeのセキュアなシステムで、自動で決済処理が行われます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">安心のサポート</h5>
+              <p class="card-text">万が一のトラブルにも迅速に対応するサポート体制を完備。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金セクション -->
+  <section id="pricing" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">料金プラン</h2>
+        <p class="text-muted">月額定額プランで、毎月決まった金額をお小遣いとして受け取れます。</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header text-center">
+              <h4 class="my-0 fw-normal">月額プラン</h4>
+            </div>
+            <div class="card-body text-center">
+              <h1 class="card-title pricing-card-title">¥1,000<small class="text-muted fw-light">/月</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Stripe決済対応</li>
+                <li>自動更新</li>
+                <li>安心サポート付き</li>
+              </ul>
+              <%= button_to "今すぐ登録", subscription_path, method: :post, data: { turbo: false }, class: "w-100 btn btn-lg btn-primary" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
