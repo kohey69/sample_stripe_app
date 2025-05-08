@@ -24,6 +24,9 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="container p-3">
+      <%= yield %>
+    </div>
   </body>
 </html>
